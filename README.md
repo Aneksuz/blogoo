@@ -11,4 +11,4 @@ CONTENT OF THE PAGE
 
 This is essentially the same format as the Next.js basics tutorial (as of 2021-11-03). It worked well there and as this is sort of a my own take on the tutorial blog.
 
-###Notes and Observations
+### Notes and Observations
