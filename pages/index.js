@@ -18,8 +18,7 @@ export default function Home() {
             <Image
               src={profilePic}
               alt="Site icon"
-              width={140}
-              height={140}
+              layout="responsive"
             />
           </div>
 
@@ -27,19 +26,23 @@ export default function Home() {
             Tobias
           </h1>
         </div>
-        <p>
-          Hello, my names is <b>Tobias</b>. I am an UX Designer and Front End Developer.
-          This is the first thing I’ve developed with Next.js. I am looking forward
-          to developing more applications but for now, enjoy this blog! Find more soon on my{" "}
-          <a href="https://github.com/Aneksuz" target="_blank">Github</a>
-        </p>
+        <div className="static-text">
+          <div className="static-text--content">
+            <p>
+              Hello, my names is <b>Tobias</b>.I am an UX Designer and Front End Developer.
+              This is the first thing I’ve developed with Next.js.I am looking forward
+              to developing more applications but for now, enjoy this blog!Find more soon on my{" "}
+              <a href="https://github.com/Aneksuz" target="_blank">Github</a>
+            </p>
 
-        <h2>Blog</h2>
+            <h2>Blog</h2>
+          </div>
+        </div>
 
-      </main>
+      </main >
       <footer>
 
       </footer>
-    </div>
+    </div >
   )
 }

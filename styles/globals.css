@@ -38,6 +38,17 @@ a {
   text-decoration: none;
 }
 
+.static-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.static-text p{
+  width: 19.938rem;
+}
+
 .profile{
   margin: 2.25rem 0 2.625rem 0;
   display: flex;
@@ -47,10 +58,54 @@ a {
 }
 
 .profile--pic{
+  width: 8.75rem;
+  height: 8.75rem;
   margin: 0 0 0.5rem 0;
 }
 
 @media screen and (min-width: 640px ){
+  
+}
+
+@media screen and (min-width: 768px ){
+  
+}
+
+@media screen and (min-width: 1024px ){
+
+  h1{
+    font-size: 2.813rem;
+  }
+
+  h2{
+    font-size: 1.688rem;
+  }
+
+  .profile--pic{
+    width: 15.625rem;
+    height: 15.625rem;
+  }
+
+  .static-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .static-text p{
+    font-size: 1.375rem;
+    text-align: center;
+    width: 27.5rem;
+  }
+
+  .static-text--content{
+    align-items: left;
+  }
+  
+}
+
+@media screen and (min-width: 1280px ){
   
 }
 
