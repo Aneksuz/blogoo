@@ -31,11 +31,15 @@ export default function Home() {
             <p>
               Hello, my names is <b>Tobias</b>.I am an UX Designer and Front End Developer.
               This is the first thing I’ve developed with Next.js.I am looking forward
-              to developing more applications but for now, enjoy this blog!Find more soon on my{" "}
+              to developing more applications but for now, enjoy this blog! Find more soon on my{" "}
               <a href="https://github.com/Aneksuz" target="_blank">Github</a>
             </p>
 
             <h2>Blog</h2>
+          </div>
+          <div className="Blog--style">
+            <p><a>BLOG TITLE AND LINK</a></p>
+            <p className="Undertext">November 5, 2021</p>
           </div>
         </div>
 
@@ -45,4 +49,14 @@ export default function Home() {
       </footer>
     </div >
   )
+}
+
+export async function getStaticProps() {
+
+  return{
+    props: {
+
+    },
+  }
+
 }
