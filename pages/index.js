@@ -43,11 +43,13 @@ export default function Home({ posts }) {
 
           {posts.map((post) => {
             return (
-              <div className="Blog--style">
+              <div className="blog--style">
                 <p>
                   <a>{post.title}</a>
                 </p>
-                <p className="Undertext">{post.date}</p>
+                <p className="blog--style_caption">
+                  {new Date(post.date).toLocaleDateString()}
+                </p>
               </div>
             );
           })}
