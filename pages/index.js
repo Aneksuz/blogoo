@@ -1,8 +1,10 @@
+import { promises as fs } from 'fs'
+import path from 'path'
 import Head from 'next/head'
 import Image from 'next/image'
 import profilePic from '../public/profile.png'
 
-export default function Home() {
+export default function Home({posts}) {
   return (
     <div>
       <Head>
@@ -52,10 +54,22 @@ export default function Home() {
 }
 
 export async function getStaticProps() {
+  const postsDir = path.join(process.cwd(), 'data')
+  const filenames = await fs.readdir(postsDir)
+
+  const posts = filenames.map(async (filename) => {
+    const filePath = path.join(postsDir, filename)
+    const fileContents = await fs.readFile(filePath, 'utf8')
+
+    return {
+      filename,
+      content: fileContents,
+    }
+  })
 
   return{
     props: {
-
+      posts: await Promise.all(posts)
     },
   }
 
