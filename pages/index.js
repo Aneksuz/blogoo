@@ -2,6 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/Link";
 import profilePic from "../public/profile.png";
 import * as matter from "gray-matter";
 
