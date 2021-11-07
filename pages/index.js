@@ -46,7 +46,9 @@ export default function Home({ posts }) {
             return (
               <div className="blog--style">
                 <p>
-                  <a>{post.title}</a>
+                  <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
+                    <a>{post.title}</a>
+                  </Link>
                 </p>
                 <p className="blog--style_caption">
                   {new Date(post.date).toLocaleDateString()}
