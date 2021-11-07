@@ -46,7 +46,11 @@ export default function Home({ posts }) {
             return (
               <div className="blog--style">
                 <p>
-                  <Link href={`/blog/${encodeURIComponent(post.slug)}`}>
+                  <Link
+                    href={`/posts/${encodeURIComponent(
+                      post.filename.slice(0, -3)
+                    )}`}
+                  >
                     <a>{post.title}</a>
                   </Link>
                 </p>
