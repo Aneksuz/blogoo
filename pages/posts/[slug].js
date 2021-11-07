@@ -3,6 +3,7 @@ import path from "path";
 import * as matter from "gray-matter";
 import Image from "next/image";
 import profilePic from "../../public/profile.png";
+import Link from "next/Link";
 
 function Post(props) {
   if (!props.exists) return null;
@@ -18,11 +19,20 @@ function Post(props) {
 
         <h1>Tobias</h1>
       </div>
-      <div>
-        <h2>{title}</h2>
+      <div className="blog--page">
+        <div>
+          <h2>{title}</h2>
+        </div>
+        <div className="blog--style_caption">{date}</div>
+        <div>
+          <p>{content}</p>
+        </div>
       </div>
-      <div className="blog--style_caption">{date}</div>
-      <div>{content}</div>
+      <footer>
+        <Link href="../../">
+          <a>Go back</a>
+        </Link>
+      </footer>
     </div>
   );
 }
