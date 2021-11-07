@@ -12,6 +12,9 @@ function Post(props) {
 
   return (
     <div>
+      <Link href="../../">
+        <a className="nav--goback">Go back</a>
+      </Link>
       <div className="profile">
         <div className="profile--pic">
           <Image src={profilePic} alt="Site icon" layout="responsive" />
@@ -28,11 +31,6 @@ function Post(props) {
           <p>{content}</p>
         </div>
       </div>
-      <footer>
-        <Link href="../../">
-          <a>Go back</a>
-        </Link>
-      </footer>
     </div>
   );
 }
