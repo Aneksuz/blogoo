@@ -31,3 +31,8 @@ This is essentially the same format as the Next.js basics tutorial (as of 2021-1
 - **[grey-matter](https://github.com/jonschlinkert/gray-matter)**, can be used to parse metadata of an markdown file. Used to fetch title and date from posts.
 - **getStaticProps()** can be used to load data on server side that can later be used on client side. Useful when loading files (Markdown blog posts in this case) and then rendering them in the HTML.
 - **[slug].js** can be used to have an dynamic path, in this case, [slug].js is utilized to generate a path for each seperate blog post.
+
+### Planned
+
+- Add Animations to the website
+- Add in app markdown generation (To create blogposts)
