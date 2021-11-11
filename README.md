@@ -1,6 +1,6 @@
 ## Blogoo
 
-This is a small blogsite that uses markdown files to keep track of and add blogposts. Used for practice and might add more advanced funtionality later on once I am more comfortable with Next.js
+This is a small blog that uses markdown files to keep track of and add blogposts. Used for practice and might add more advanced funtionality later on once I am more comfortable with Next.js
 
 ### Markdown formatting
 
@@ -18,7 +18,7 @@ Title is used as the title for the post. This will be displayed on the homepage 
 
 #### Date
 
-This will display the date that the post was posted. Will displayed as a caption for both the link on the homepage and the heading on the blog site.
+This will display the date that the post was posted. Will displayed as a caption for both the link on the homepage and the heading on the blog.
 
 #### Content
 
