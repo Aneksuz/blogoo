@@ -36,3 +36,4 @@ This is essentially the same format as the Next.js basics tutorial (as of 2021-1
 
 - Add Animations to the website
 - Add in app markdown generation (To create blogposts)
+- Add admin login or something similar
