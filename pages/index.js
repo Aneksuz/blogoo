@@ -19,8 +19,8 @@ export default function Home({ posts }) {
       <main>
         <motion.div
           className="profile"
-          initial={{ height: 0, opacity: 0 }}
-          animate={{ height: "auto", opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.75 }}
         >
           <div className="profile--pic">
