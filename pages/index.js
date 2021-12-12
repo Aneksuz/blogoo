@@ -17,14 +17,24 @@ export default function Home({ posts }) {
       </Head>
 
       <main>
-        <div className="profile">
+        <motion.div
+          className="profile"
+          initial={{ height: 0, opacity: 0 }}
+          animate={{ height: "auto", opacity: 1 }}
+          transition={{ duration: 0.75 }}
+        >
           <div className="profile--pic">
             <Image src={profilePic} alt="Site icon" layout="responsive" />
           </div>
 
           <h1>Tobias</h1>
-        </div>
-        <div className="static-text">
+        </motion.div>
+        <motion.div
+          className="static-text"
+          initial={{ width: 0, opacity: 0 }}
+          animate={{ width: "auto", opacity: 1 }}
+          transition={{ duration: 0.75 }}
+        >
           <div className="static-text--content">
             <p>
               Hello, my names is <b>Tobias</b>.I am an UX Designer and Front End
@@ -57,7 +67,7 @@ export default function Home({ posts }) {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </main>
       <footer></footer>
     </div>
