@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import profilePic from "../public/profile.png";
 import * as matter from "gray-matter";
+import { motion } from "framer-motion";
 
 export default function Home({ posts }) {
   return (
