@@ -37,10 +37,10 @@ export default function Home({ posts }) {
         >
           <div className="static-text--content">
             <p>
-              Hello, my names is <b>Tobias</b>.I am an UX Designer and Front End
-              Developer. This is the first thing I’ve developed with Next.js.I
-              am looking forward to developing more applications but for now,
-              enjoy this blog! Find more soon on my{" "}
+              Hello, my names is <b>Tobias</b>. I am an UX Designer and Front
+              End Developer. This is the first thing I’ve developed with
+              Next.js.I am looking forward to developing more applications but
+              for now, enjoy this blog! Find more soon on my{" "}
               <a href="https://github.com/Aneksuz" target="_blank">
                 Github
               </a>
