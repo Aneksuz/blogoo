@@ -4,6 +4,7 @@ import * as matter from "gray-matter";
 import Image from "next/image";
 import profilePic from "../../public/profile.png";
 import Link from "next/Link";
+import { motion } from "framer-motion";
 
 function Post(props) {
   if (!props.exists) return null;
@@ -22,7 +23,12 @@ function Post(props) {
 
         <h1>Tobias</h1>
       </div>
-      <div className="blog--page">
+      <motion.div
+        className="blog--page"
+        initial={{ width: 0, opacity: 0 }}
+        animate={{ width: "auto", opacity: 1 }}
+        transition={{ duration: 0.25 }}
+      >
         <div>
           <h2>{title}</h2>
         </div>
@@ -30,7 +36,7 @@ function Post(props) {
         <div>
           <p>{content}</p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

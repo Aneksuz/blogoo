@@ -31,8 +31,8 @@ export default function Home({ posts }) {
         </motion.div>
         <motion.div
           className="static-text"
-          initial={{ width: 0, opacity: 0 }}
-          animate={{ width: "auto", opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.75 }}
         >
           <div className="static-text--content">
