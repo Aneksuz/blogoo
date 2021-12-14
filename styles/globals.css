@@ -97,6 +97,12 @@ a {
 
 .nav--goback {
   position: absolute;
+  cursor: pointer;
+  padding: 0.5%;
+  border-radius: 50px;
+
+  width: -webkit-fit-content;
+  height: -webkit-fit-content;
 }
 
 @media screen and (min-width: 640px) {

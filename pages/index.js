@@ -19,9 +19,9 @@ export default function Home({ posts }) {
       <main>
         <motion.div
           className="profile"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.75 }}
+          initial={{ opacity: 0, translateY: -100, scale: 0.9 }}
+          animate={{ opacity: 1, translateY: 0, scale: 1.0 }}
+          transition={{ type: "spring", duration: 0.75 }}
         >
           <div className="profile--pic">
             <Image src={profilePic} alt="Site icon" layout="responsive" />
@@ -29,12 +29,7 @@ export default function Home({ posts }) {
 
           <h1>Tobias</h1>
         </motion.div>
-        <motion.div
-          className="static-text"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.75 }}
-        >
+        <div className="static-text">
           <div className="static-text--content">
             <p>
               Hello, my names is <b>Tobias</b>. I am an UX Designer and Front
@@ -67,7 +62,7 @@ export default function Home({ posts }) {
               </div>
             );
           })}
-        </motion.div>
+        </div>
       </main>
       <footer></footer>
     </div>

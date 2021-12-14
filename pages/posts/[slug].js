@@ -15,7 +15,14 @@ function Post(props) {
   return (
     <div>
       <Link href="../../">
-        <a className="nav--goback">
+        <motion.a
+          className="nav--goback"
+          whileHover={{
+            backgroundColor: "rgba(0, 151, 243, 0.2)",
+            scale: 1.4,
+            transition: { duration: 0.5 },
+          }}
+        >
           <svg
             width="30"
             height="24"
@@ -28,7 +35,7 @@ function Post(props) {
               fill="#0070f3"
             />
           </svg>
-        </a>
+        </motion.a>
       </Link>
       <div className="profile">
         <div className="profile--pic">
@@ -41,7 +48,7 @@ function Post(props) {
         className="blog--page"
         initial={{ width: 0, opacity: 0 }}
         animate={{ width: "auto", opacity: 1 }}
-        transition={{ duration: 0.25 }}
+        transition={{ type: "spring", duration: 0.5 }}
       >
         <div>
           <h2>{title}</h2>
