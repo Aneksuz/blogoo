@@ -3,6 +3,7 @@ import path from "path";
 import * as matter from "gray-matter";
 import Image from "next/image";
 import profilePic from "../../public/profile.png";
+import ArrowSVG from "../../public/arrow.svg";
 import Link from "next/Link";
 import { motion } from "framer-motion";
 
@@ -14,7 +15,9 @@ function Post(props) {
   return (
     <div>
       <Link href="../../">
-        <a className="nav--goback">Go back</a>
+        <a className="nav--goback">
+          <Image src={ArrowSVG} alt="Go back Arrow" layout="responsive" />
+        </a>
       </Link>
       <div className="profile">
         <div className="profile--pic">
