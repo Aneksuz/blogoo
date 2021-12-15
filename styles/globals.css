@@ -100,9 +100,10 @@ a {
   cursor: pointer;
   padding: 0.5%;
   border-radius: 50px;
+}
 
-  width: -webkit-fit-content;
-  height: -webkit-fit-content;
+.nav--goback svg {
+  display: block;
 }
 
 @media screen and (min-width: 640px) {
